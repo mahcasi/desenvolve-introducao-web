@@ -1,0 +1,126 @@
+/* Color Theme Swatches in Hex */
+.Teal-and-Mint-1-hex { color: #C7FFED; }
+.Teal-and-Mint-2-hex { color: #D8FFDB; }
+.Teal-and-Mint-3-hex { color: #008F8C; }
+.Teal-and-Mint-4-hex { color: #015958; }
+.Teal-and-Mint-5-hex { color: #023535; }
+
+body {
+    background-color: #D8FFDB;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #015958;
+    margin: 0;  
+}
+
+header {
+    background-color: #008F8C;
+    color: white;
+    width: 100%;
+    top: 0;
+    position: fixed;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+
+}
+
+nav ul li {
+    padding: 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 40px 5px;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    color: #023535;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    color: #023535;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    color: #023535;
+}
+
+#apresentacao img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #008F8C;
+}
+
+#apresentacao p {
+    line-height: 1.0em;
+    padding: 0.5px; 
+}
+
+#educacao .educacao-1, .educacao-2, .educacao-3, .educacao-4, .educacao-5 {
+    line-height: 0.5em;
+    padding: 0.5px;
+}
+
+#certificacoes .certificacao-1, .certificacao-2, .certificacao-3, .certificacao-4, .certificacao-5 {
+    line-height: 0.5em;
+    padding: 0.5px;
+}
+
+#experiencia .experiencia-1, .experiencia-2, .experiencia-3 {
+    line-height: 0.5em;
+    padding: 0.5px;
+}
+
+footer {
+    background-color: #008F8C;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    display: inline;
+    margin: 20px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer p {
+    color: rgba(255, 255, 255, 0.231);
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        padding: 0.25em;
+    }
+    body {
+        margin-top: 110px;
+    }
+}

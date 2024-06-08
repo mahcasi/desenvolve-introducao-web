@@ -1,0 +1,209 @@
+
+html {
+    background: #F2F2F2; /* cor do fundo */
+    color: #044040; /* cor principal fonte */
+
+    font-size: 18px; /* tamanho da fonte da página*/
+    font-family: Arial, Helvetica, sans-serif; /* tipo de fonte da página*/
+}
+
+p {
+    text-indent: 1em;
+}
+
+h1, h2 , h3 {
+    text-align: center; /* alinhamento dos títulos*/
+}
+
+h1 {font-size: 1.8rem;} /*18px x 1.8*/
+h2 {font-size: 1.4rem;} /*18px x 1.4*/
+h3 {font-size: 1.2rem;} /*18px x 1.2*/
+
+.summary {text-align: center;} /* alinhamento da class summary*/
+.main p {line-height: 1.5;} /* espaçamento entre linhas */
+
+abbr {font-variant: small-caps;} /* abreviaturas */
+
+/*
+*/
+
+.page-wrapper { 
+    width: 80%; /* largura da página */
+    max-width: 1280px; /*largura máxima da página */
+    margin: auto; /* centralizar a página automatico*/
+}
+
+#zen-intro {
+    height: 550px; /*altura*/
+}
+
+#design-archives {
+    display: none; /* Remove da renderização da página */
+}
+
+#zen-intro header {
+    background-color: #044040;
+    color: #F2F2F2;
+}
+
+#zen-intro header h1,  #zen-intro header h2 {
+    display: inline-block; 
+}
+
+#zen-intro header h1 {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+aside ul {
+    list-style-type: none;
+}
+
+aside ul li {
+    margin: 1em;
+    text-align: center;
+}
+
+.main footer {
+    margin: 4%;
+}
+
+.main footer a {
+    border: solid 2px #044040;
+    padding: 0.5em;
+    display: inline-block;
+}
+
+/*
+*/
+
+ .page-wrapper { 
+    position: relative; /* posicionamento */
+ }
+
+ .explanation {
+    width: 60%; /* largura da área do contéudo */
+    border-right: #1f295c solid 1px; /* borda a direita */
+    padding-right: 2%; /* espaçamento entre a borda e contéudo */
+ }
+
+ .design-selection {
+    position: absolute;
+    top: 480px; /* posicionamento topo */
+    left: 62%;
+    padding-left: 1%;
+    padding-right: 1%;
+ }
+ 
+/*
+*/
+
+.supporting footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.benefits {
+    display: flex;
+    border-top: #044040 solid 1px;
+    border-bottom: #044040 solid 1px;
+}
+
+.benefits p {
+    flex-basis: 70%;
+}
+
+.benefits h3 {
+    order: 2;
+    align-self: center;
+    flex-basis: 30%;
+}
+
+.participation {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: #044040 solid 1px;
+}
+
+.participation h3, .participation p {
+    flex-basis: 50%;
+}
+
+.participation h3 {
+    align-self: center;
+}
+
+/*
+*/
+
+a {
+    color: #D92525;
+}
+
+a:hover { 
+    color: #d9252582;
+}
+
+.main p:first-of-type:first-letter {
+    font-size: 3em;
+    font-family: 'Times New Roman', Times, serif;
+    float: left;
+}
+
+.design-selection li {
+    border-top: #044040 solid 1px;
+    padding-top: 5px;
+}
+
+.design-selection li:last-of-type {
+    border-bottom: #044040 solid 1px;
+    padding-top: 5px;
+}
+
+/*
+*/
+
+@media screen and (max-width: 768px) {
+    .design-selection {
+        position: static;
+        width: 100%;
+    }
+
+    .explanation {
+        border-right: none;
+        width: 100%;
+    }
+
+    #zen-intro {
+        height: auto;
+    }
+
+    .participation {
+        flex-direction: column;
+    }
+
+    p {
+        text-indent: 0;
+    }
+}
+
+@media print {
+    html {
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    #zen-intro header {
+        background-color: #F2F2F2;
+        color: #1f295c;
+    }
+    
+    .design-selection {
+        position: static;
+        width: 100%;
+    }
+
+    .explanation {
+        border-right: none;
+        width: 100%;
+    }
+}
