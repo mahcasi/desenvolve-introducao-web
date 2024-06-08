@@ -8,3 +8,5 @@
 <p>
   PDITA391
 </p>
+
+<p><strong>obs: tem arquivos repetidos porque eu não sei editar os repositório, apenas fazer upload.</strong></p>
