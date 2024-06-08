@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head><!--cabeçario da página-->
+        <title> <!--titulo da pagina-->
+            Formulario de Pesquisa
+        </title>
+    </head>
+    <body>
+        <h1>Pesquisa de Satisfação</h1><!--titulo principaç-->
+        <form method="post" action="processar_pesquisa.html">
+            <!--formularios-->
+            <!--metodo de envio de dados-->
+            <!--para onde os dados serão enviados-->
+            
+            <section><!--para delimitar a primeira parte-->
+                <h2>Dados Pessoas</h2><!--titulo segundario-->
+                <p>
+                    <label for="nome">Nome:</label> <!--campo de mensagem-->
+                    <input type="text" id="nome"/>
+                </p>
+                <p>
+                    <label for="email">E-mail:</label> <!--campo de mensagem-->
+                    <input type="email" id="email"/>
+                </p>
+                <p>
+                    <label for="telefone">Telefone:</label> <!--campo de mensagem-->
+                    <input type="tel" id="telefone"/>
+                    <!--tel para numero de telefone-->
+                </p>
+            </section>
+            <section><!--para delimitar a segunda parte-->
+                <h2>Dados de Pesquisa</h2>
+                <p>
+                    Em uma escala de 1 a 5, indique o nivel de atendimento prestado:
+                    <input type="radio" id="1" name="nivel atendimento"/>
+                    <label for="1">1</label>
+                    <input type="radio" id="2" name="nivel atendimento"/>
+                    <label for="2">2</label>
+                    <input type="radio" id="3" name="nivel atendimento"/>
+                    <label for="3">3</label>
+                    <input type="radio" id="4" name="nivel atendimento"/>
+                    <label for="4">4</label>
+                    <input type="radio" id="5" name="nivel atendimento"/>
+                    <label for="5">5</label>
+                </p>
+                <p>
+                    Em uma escala de 1 a 5, indique o nivel de satisfação em relação
+                    a resolução do problema:
+                    <input type="radio" id="1" name="nivel satisfação"/>
+                    <label for="1">1</label>
+                    <input type="radio" id="2" name="nivel satisfação"/>
+                    <label for="2">2</label>
+                    <input type="radio" id="3" name="nivel satisfação"/>
+                    <label for="3">3</label>
+                    <input type="radio" id="4" name="nivel satisfação"/>
+                    <label for="4">4</label>
+                    <input type="radio" id="5" name="nivel satisfação"/>
+                    <label for="5">5</label>
+                    
+                </p>
+                <p>
+                    <label for="departamento">Departamento de Atendimento:</label>
+                    <select> <!--opções para selecionar-->
+                        <option>Marketing</option>
+                        <option>Financeiro</option>
+                        <option>Comercial</option>
+                        <option>Logistíca</option>
+                        <option>Recursos Humanos</option>
+                    </select>
+                </p>
+                <p>
+                    <input type="checkbox" id="compartilhar dados"/> <!--botão de check-->
+                    <label for="compartilhar dados">Autorizo o compartilhamento de dados com terceiros.</label>
+                </p>
+            </section>
+            <input type="submit" value="Enviar"/> <!--botão-->
+        </form>
+    </body>
+</html>
